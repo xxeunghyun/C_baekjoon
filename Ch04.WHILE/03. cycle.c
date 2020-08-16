@@ -27,13 +27,13 @@ int main(){
 
   if(n<0 || n>99)
   {
-    printf("n의 범위: 0보다 크거나 같고, 99보다 작거나 같다.\n");
+    printf("n의 범위는 0보다 크거나 같고, 99보다 작거나 같다.\n");
   }
 
 
   tmp = n; //이게 젤 중요.....
 
-  while(1)
+  while(n == tmp)
   {
     int a = n/10;
     int b = n%10;
@@ -51,7 +51,7 @@ int main(){
 
   }
 
-  printf("%d\n",cnt);
+  printf("cycle : %d\n",cnt);
 
   return 0;
 }
